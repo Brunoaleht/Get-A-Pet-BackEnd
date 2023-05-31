@@ -28,7 +28,7 @@ module.exports = class UserController {
       return;
     }
     if (!confirmpassword) {
-      res.status(422).json({ message: "A confirmação tem q ser obrigatório" });
+      res.status(422).json({ message: "A confirmação de senha é obrigatório" });
       return;
     }
     if (confirmpassword !== password) {
